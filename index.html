@@ -5,6 +5,11 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Meraj Khan — Automation Consultant & Tech Enthusiast. Building scalable test automation, performance testing, and AI-driven quality engineering.">
+	<meta property="og:title" content="Meraj Khan — Portfolio">
+	<meta property="og:description" content="Automation Consultant & Tech Enthusiast. Scalable test automation and AI-driven QA.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/logo.png">
 	<link rel="icon" href="img/favicon.png" type="image/png">
 	<title>Meraj Portfolio</title>
 	<!-- Bootstrap CSS -->
@@ -16,63 +21,47 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" rel="stylesheet">
-	<style>
-		/* Added responsiveness for images and text */
-		img {
-			max-width: 100%;
-			height: auto;
-		}
 
-		.banner_content h3,
-		.banner_content h1,
-		.banner_content h5 {
-			word-wrap: break-word;
-		}
-
-		/* Ensure navigation menu is responsive */
-		@media (max-width: 768px) {
-			.navbar-nav {
-				flex-direction: column;
-			}
-		}
-	</style>
 </head>
 
 <body>
 	<!--================ Start Header Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img height="70%" width="70%" src="img/logo.png"
-							alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse"
-						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Scroll To See Full
-									Profile</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-		</div>
-		</nav>
-		</div>
-	</header>
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand logo_h" href="#home" aria-label="Go to home">
+                        <img height="70%" width="70%" src="img/logo.png" alt="Meraj Khan Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <!-- <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://github.com/" target="_blank" rel="noopener">Repo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
 	<!--================ End Header Area =================-->
-
+	<br>
 	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
+	<section class="home_banner_area" id="home">
 		<div class="banner_inner">
 			<div class="container">
 				<div class="row">
@@ -93,17 +82,15 @@
 								release confidently, and embrace the future of AI-powered testing.
 							</p>
 							<div class="d-flex align-items-center banner_buttons">
-								<a class="primary_btn"
-									href="https://in.linkedin.com/in/meraj-khan-sdet"><span>LinkedIn</span></a>
-								<a class="primary_btn" href="Profile.pdf"><span>Resume</span></a>
-								<a class="primary_btn"
-									href="https://sites.google.com/view/khanstack/testops?authuser=2"><span>Learnings</span></a>
+								<a class="primary_btn" href="https://in.linkedin.com/in/meraj-khan-sdet" target="_blank" rel="noopener"><span>LinkedIn</span></a>
+								<a class="primary_btn" href="Profile.pdf" target="_blank" rel="noopener"><span>Resume</span></a>
+								<a class="primary_btn" href="https://sites.google.com/view/khanstack/testops?authuser=2" target="_blank" rel="noopener"><span>Learnings</span></a>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-5">
 						<div class="home_right_img">
-							<img class="" src="img/banner/home-right.png" alt="">
+							<img src="img/banner/home-right.png" alt="Meraj hero illustration">
 						</div>
 					</div>
 				</div>
@@ -114,12 +101,12 @@
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start About Us Area =================-->
-	<section class="about_area section_gap">
+	<!-- <section class="about_area section_gap" id="about">
 		<div class="container">
 			<div class="row justify-content-start align-items-center">
 				<div class="col-lg-5">
 					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
+						<img src="img/about-us.png" alt="About Meraj" loading="lazy" decoding="async">
 					</div>
 				</div>
 
@@ -128,15 +115,9 @@
 						<h2 class="about_title">About Me</h2>
 						<p>
 							<i>
-								I am a results-driven professional with a passion for delivering innovative and
-								high-quality
-								solutions. Combining technical expertise with problem-solving skills, I have
-								consistently
-								exceeded expectations in the fields of automation and quality assurance.
-
-								I'm excited to take on new opportunities that will broaden my expertise, push
-								boundaries,
-								and make a meaningful impact on innovative teams and projects.
+								I’m an automation consultant who enjoys turning complex systems into <strong>reliable, readable tests</strong>.
+								I care about fast feedback, thoughtful tooling, and delivering value with calm, predictable releases.
+								Outside of work, I love exploring new ways <strong>AI</strong> can elevate quality engineering.
 							</i>
 						</p>
 					</div>
@@ -146,9 +127,8 @@
 
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!--================ End About Us Area =================-->
-
 	<!--================ Srart Brand Area =================-->
 	<section class="brand_area section_gap_bottom">
 		<div class="container">
@@ -158,84 +138,84 @@
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/logo1.gif" alt="">
+									<img src="img/brands/logo1.gif" alt="Brand 1" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/logo2.gif" alt="">
+									<img src="img/brands/logo2.gif" alt="Brand 2" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/logo3.gif" alt="">
+									<img src="img/brands/logo3.gif" alt="Brand 3" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/Xerox.PNG" alt="">
+									<img src="img/brands/Xerox.PNG" alt="Xerox" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/rtx.png" alt="">
+									<img src="img/brands/rtx.png" alt="RTX" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/bank.png" alt="">
+									<img src="img/brands/bank.png" alt="Bank" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/logo4.png" alt="">
+									<img src="img/brands/logo4.png" alt="Brand 4" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/ikea.png" alt="">
+									<img src="img/brands/ikea.png" alt="IKEA" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/logo5.jpg" alt="">
+									<img src="img/brands/logo5.jpg" alt="Brand 5" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/cb.png" alt="">
+									<img src="img/brands/cb.png" alt="CB" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/bz.png" alt="">
+									<img src="img/brands/bz.png" alt="BZ" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/brands/nova.png" alt="">
+									<img src="img/brands/nova.png" alt="NOVA" loading="lazy" decoding="async">
 								</div>
 							</div>
 						</div>
@@ -252,9 +232,12 @@
 								<span class="fa fa-whatsapp"></span>
 							</div>
 							<div class="ml-15">
-								<p>call me on</p>
+								<p>Call Me on</p>
 								<h3>+91 9490 724987</h3>
-								<h4>merajkhanselenium@gmail.com</h4>
+								<br>
+								<p>Email</p>
+								<h4>meraj.codes.ai@gmail.com</h4>
+								<h4>merajkhanwork@gmail.com</h4>
 							</div>
 						</div>
 					</div>
@@ -263,6 +246,84 @@
 		</div>
 	</section>
 	<!--================ End Brand Area =================-->
+
+		<!--================ Start Certifications Area =================-->
+	<section class="section_gap" id="certifications">
+		<div class="container">
+			<div class="main_title text-left">
+				<h2>Certifications</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="white_bg p-4 h-100">
+						<h4><i class="fas fa-certificate mr-2"></i> Scrum Certified</h4>
+						<p class="mb-0">Agile delivery, ceremonies, and team facilitation.</p>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="white_bg p-4 h-100">
+						<h4><i class="fas fa-robot mr-2"></i> RoboCorp Certified</h4>
+						<p class="mb-0">RPA development with Robot Framework and Robocorp tools.</p>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="white_bg p-4 h-100">
+						<h4><i class="fas fa-shield-alt"></i> AccelQ Certified</h4>
+						<p class="mb-0">ACCELQ codeless automation design and best practices.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Certifications Area =================-->
+
+	<!--================ Start Projects Area =================-->
+    <section class="section_gap d-none" aria-hidden="true">
+		<div class="container">
+			<div class="main_title text-left">
+				<h2>Quality Work &mdash; Recently Done Projects</h2>
+				<p>A few recent projects I’m proud of.</p>
+			</div>
+			<div class="projects-grid">
+				<a class="project-card" href="#" aria-label="Project 1">
+					<div class="project-thumb"><img src="img/blog/home-blog/home-blog-1.jpg" alt="Project 1" loading="lazy" decoding="async"></div>
+					<div class="project-body">
+						<h3 class="project-title">E2E Playwright Suite</h3>
+						<div class="project-meta">Playwright • TypeScript • CI</div>
+					</div>
+				</a>
+				<a class="project-card" href="#" aria-label="Project 2">
+					<div class="project-thumb"><img src="img/blog/home-blog/home-blog-2.jpg" alt="Project 2" loading="lazy" decoding="async"></div>
+					<div class="project-body">
+						<h3 class="project-title">API Contract Tests</h3>
+						<div class="project-meta">Python • PyTest • Pact</div>
+					</div>
+				</a>
+				<a class="project-card" href="#" aria-label="Project 3">
+					<div class="project-thumb"><img src="img/blog/home-blog/home-blog-3.jpg" alt="Project 3" loading="lazy" decoding="async"></div>
+					<div class="project-body">
+						<h3 class="project-title">Locust Load Scenarios</h3>
+						<div class="project-meta">Locust • Python • APM</div>
+					</div>
+				</a>
+				<a class="project-card" href="#" aria-label="Project 4">
+					<div class="project-thumb"><img src="img/blog/main-blog/m-blog-1.jpg" alt="Project 4" loading="lazy" decoding="async"></div>
+					<div class="project-body">
+						<h3 class="project-title">Robot Framework Suite</h3>
+						<div class="project-meta">Robot • Selenium • Reporting</div>
+					</div>
+				</a>
+				<a class="project-card" href="#" aria-label="Project 5">
+					<div class="project-thumb"><img src="img/blog/main-blog/m-blog-2.jpg" alt="Project 5" loading="lazy" decoding="async"></div>
+					<div class="project-body">
+						<h3 class="project-title">Data QA Pipelines</h3>
+						<div class="project-meta">ETL • Validation • Python</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!--================ End Projects Area =================-->
 
 	<!--================ Start Features Area =================-->
 	<section class="features_area">
@@ -341,13 +402,12 @@
 
 
 	<!--================Start Portfolio Area =================-->
-	<section class="portfolio_area" id="portfolio">
+    <section class="portfolio_area" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="main_title text-left">
-						<h2>Quality work <br>
-							Recently done project </h2>
+						<h2>Quality Work &mdash; Recently Done Projects</h2>
 					</div>
 				</div>
 			</div>
@@ -366,7 +426,7 @@
 					<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p1.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/p1.jpg" alt="Tax Reform Navigator screenshot" loading="lazy" decoding="async">
 								<div class="overlay"></div>
 								<a href="img/portfolio/p1.jpg" class="img-gal">
 									<div class="icon">
@@ -383,9 +443,9 @@
 					<div class="col-lg-4 col-md-6 all popular">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p2.png" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/p2.png" alt="987 - Analyzer screenshot" loading="lazy" decoding="async">
 								<div class="overlay"></div>
-								<a href="img/portfolio/p2.jpg" class="img-gal">
+								<a href="img/portfolio/p2.png" class="img-gal">
 									<div class="icon">
 										<span class="lnr lnr-cross"></span>
 									</div>
@@ -400,7 +460,7 @@
 					<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" height="50%" width="50%" src="img/portfolio/p3.jpg" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/p3.jpg" alt="Caterpillar project screenshot" loading="lazy" decoding="async">
 								<div class="overlay"></div>
 								<a href="img/portfolio/p3.jpg" class="img-gal">
 									<div class="icon">
@@ -414,10 +474,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-7 all popular">
+                    <div class="col-lg-4 col-md-6 all popular">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/p4.gif" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/p4.gif" alt="E-Copon animation" loading="lazy" decoding="async">
 								<div class="overlay"></div>
 								<a href="img/portfolio/p4.jpg" class="img-gal">
 									<div class="icon">
@@ -438,6 +498,46 @@
 		</div>
 	</section>
 	<!--================End Portfolio Area =================-->
+
+		<!--================ Start Blogs Area =================-->
+	<section class="section_gap" id="blogs">
+		<div class="container">
+			<div class="main_title text-left">
+				<h2>Blogs</h2>
+				<p>Fresh, practical notes on testing, automation, and AI.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<a class="white_bg d-block" href="#">
+						<img src="img/blog/main-blog/m-blog-3.jpg" alt="Blog 1" class="w-100" loading="lazy" decoding="async">
+						<div class="p-3">
+							<h4>Designing Reliable E2E Tests</h4>
+							<p class="mb-0">Patterns to reduce flakiness and boost confidence.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 mb-4">
+					<a class="white_bg d-block" href="#">
+						<img src="img/blog/main-blog/m-blog-4.jpg" alt="Blog 2" class="w-100" loading="lazy" decoding="async">
+						<div class="p-3">
+							<h4>Load Testing with Locust</h4>
+							<p class="mb-0">Scalable patterns for realistic traffic modeling.</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 mb-4">
+					<a class="white_bg d-block" href="#">
+						<img src="img/blog/main-blog/m-blog-5.jpg" alt="Blog 3" class="w-100" loading="lazy" decoding="async">
+						<div class="p-3">
+							<h4>Agentic Testing Workflows</h4>
+							<p class="mb-0">Using LLMs to accelerate test authoring.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Blogs Area =================-->
 
 	<section class="button-area">
 		<div class="container border-top-generic">
@@ -553,24 +653,8 @@
 
 			</div>
 	</section>
-	<section class="button-area">
-		<div class="container border-top-generic">
-			<h3 class="text-heading title_color">Certifications</h3>
-			<div class="button-group-area mt-10">
-				<a href="#" class="genric-btn info-border">
-					<i class="fas fa-certificate"></i> Scrum Certified
-				</a>
-				<a href="#" class="genric-btn info-border">
-					<i class="fas fa-robot"></i> RoboCorp Certified
-				</a>
-				<a href="#" class="genric-btn info-border">
-					<i class="fas fa-shield-alt"></i> AccelQ Certified
-				</a>
-			</div>
-		</div>
-	</section>
 
-	<section class="skills-area">
+	<section class="skills-area" id="skills">
 		<div class="container border-top-generic">
 			<!-- Section Title -->
 			<h3 class="text-heading title_color">Skills Overview</h3>
@@ -691,7 +775,7 @@
 
 
 	<!--================ Start Testimonial Area =================-->
-	<div class="testimonial_area section_gap_bottom">
+	<div class="testimonial_area section_gap_bottom" id="testimonials">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -706,7 +790,7 @@
 					<div class="testi_item">
 						<div class="row">
 							<div class="col-lg-4">
-								<img src="img/testimonials/reyaz.png" alt="">
+								<img src="img/testimonials/reyaz.png" alt="Reyaz Shaik" loading="lazy" decoding="async">
 							</div>
 							<div class="col-lg-8">
 								<div class="testi_text">
@@ -720,7 +804,7 @@
 					<div class="testi_item">
 						<div class="row">
 							<div class="col-lg-4">
-								<img src="img/testimonials/eugene.jpg" alt="">
+								<img src="img/testimonials/eugene.jpg" alt="Eugene Igoshin" loading="lazy" decoding="async">
 							</div>
 							<div class="col-lg-8">
 								<div class="testi_text">
@@ -734,7 +818,7 @@
 					<div class="testi_item">
 						<div class="row">
 							<div class="col-lg-4">
-								<img src="img/testimonials/melissa.jpg" alt="">
+								<img src="img/testimonials/melissa.jpg" alt="Melissa Bender" loading="lazy" decoding="async">
 							</div>
 							<div class="col-lg-8">
 								<div class="testi_text">
@@ -748,7 +832,7 @@
 					<div class="testi_item">
 						<div class="row">
 							<div class="col-lg-4">
-								<img src="img/testimonials/sarika.jfif" alt="">
+								<img src="img/testimonials/sarika.jfif" alt="Sarika Sonawane" loading="lazy" decoding="async">
 							</div>
 							<div class="col-lg-8">
 								<div class="testi_text">
@@ -762,7 +846,7 @@
 					<div class="testi_item">
 						<div class="row">
 							<div class="col-lg-4">
-								<img src="img/testimonials/kishore.jpg" alt="">
+								<img src="img/testimonials/kishore.jpg" alt="Kishore Korlamanda" loading="lazy" decoding="async">
 							</div>
 							<div class="col-lg-8">
 								<div class="testi_text">
@@ -776,7 +860,7 @@
 					<div class="testi_item">
 						<div class="row">
 							<div class="col-lg-4">
-								<img src="img/testimonials/maharshi.jpg" alt="">
+								<img src="img/testimonials/maharshi.jpg" alt="Maharshi Patel" loading="lazy" decoding="async">
 							</div>
 							<div class="col-lg-8">
 								<div class="testi_text">
@@ -805,7 +889,7 @@
 						<div class="footer_logo">
 							<a href="#">
 								<!-- <img height="30%" width="30%" src="img/logo.png" alt=""> -->
-								<img class="author_img rounded-circle" src="img/blog/author.jpg" alt="">
+								<img class="author_img rounded-circle" src="img/blog/author.jpg" alt="Portrait of Meraj" loading="lazy" decoding="async">
 								<h4>Meraj Khan</h4>
 								<p>Automation Consultant</p>
 								<div class="footer_social">
@@ -815,10 +899,7 @@
 									<a href="#"><i class="fa fa-behance"></i></a>
 									<a href="#"><i class="fa fa-github"></i></a>
 								</div>
-								<p>Experienced Software Quality Analyst with a demonstrated history of working in the
-									computer software industry. Skilled in Process & Project Management, Customer
-									Service, and Requirements Analysis with Communication. Strong quality assurance
-									professional with a Master's in Computer Application.</p>
+								<p>Automation consultant with 9+ years in QA and test engineering. I help teams ship faster with clean automation, stable pipelines, and a calm, quality-first culture.</p>
 								<div class="br">
 							</a>
 						</div>
@@ -833,12 +914,10 @@
 
 			</div>
 		</div>
-		<div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13"
-			data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia." data-mlat="40.701083"
-			data-mlon="-74.1522848">
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
+
+</footer>
+<!--================End Footer Area =================-->
+<button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -853,9 +932,9 @@
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/mail-script.js"></script>
 	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
+	<script src="js/custom.js"></script>
 	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 
