@@ -40,6 +40,15 @@ img { max-width: 100%; height: auto; }
 /* Reduce large title spacing */
 .main_title { margin-bottom: 60px !important; }
 
+/* Normalize spacing for key sections */
+.features_area,
+.portfolio_area { padding: 80px 0 !important; }
+
+@media (max-width: 991px) {
+  .features_area,
+  .portfolio_area { padding: 60px 0 !important; }
+}
+
 /* About image centering within its column */
 .about_img { display: flex; justify-content: center; }
 .about_img img { display: block; margin: 0 auto; }
@@ -86,3 +95,23 @@ img { max-width: 100%; height: auto; }
   max-height: 180px;
   object-fit: cover;
 }
+
+/* Header logo size */
+.header_area .navbar .navbar-brand img {
+  height: 42px;
+}
+
+/* Add a little horizontal space after the logo */
+.header_area .navbar .navbar-brand {
+  margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .header_area .navbar .navbar-brand img {
+    height: 36px;
+  }
+}
+
+/* Make logo slightly transparent, restore on hover */
+.header_area .navbar .navbar-brand img { opacity: 0.9; transition: opacity .2s ease; }
+.header_area .navbar .navbar-brand:hover img { opacity: 1; }
