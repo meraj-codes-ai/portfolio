@@ -98,7 +98,7 @@ img { max-width: 100%; height: auto; }
 
 /* Header logo size */
 .header_area .navbar .navbar-brand img {
-  height: 50px;
+  height: 150px;
 }
 
 /* Add a little horizontal space after the logo */
@@ -108,7 +108,7 @@ img { max-width: 100%; height: auto; }
 
 @media (max-width: 991px) {
   .header_area .navbar .navbar-brand img {
-    height: 36px;
+    height: 80px;
   }
 }
 
