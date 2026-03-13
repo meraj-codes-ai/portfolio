@@ -2,30 +2,29 @@
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Tools and resources for QA, automation, and AI testing.">
+	<meta name="description" content="Meraj Khan tools page - curated QA, automation, performance, and AI engineering tools.">
 	<meta property="og:title" content="Meraj Khan - Tools">
-	<meta property="og:description" content="Trending repos, tools, and extensions for modern QA.">
+	<meta property="og:description" content="A curated tools page for modern QA, automation, and AI-assisted engineering workflows.">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="img/logo.png">
 	<link rel="icon" href="img/logo.png" type="image/png">
 	<title>Meraj Tools</title>
-	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css" rel="stylesheet">
 </head>
 
-<body>
-	<!--================ Start Header Area =================-->
+<body class="ai-future-theme tools-page">
 	<header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -41,97 +40,562 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="index.html#portfolio">Projects</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.html#certifications">Certifications</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
 							<li class="nav-item"><a class="nav-link active" href="tools.html">Tools</a></li>
 							<li class="nav-item"><a class="nav-link" href="https://github.com/meraj-codes-ai" target="_blank" rel="noopener">Repo</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
 						</ul>
+						<div class="theme_toggle_wrap">
+							<button class="theme_toggle_btn" type="button" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+								<i class="fas fa-moon theme_icon_dark"></i>
+								<i class="fas fa-sun theme_icon_light"></i>
+							</button>
+						</div>
 					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
-	<!--================ End Header Area =================-->
 
-	<section class="section_gap" id="tools">
+	<section class="tools_hero_area" id="home">
 		<div class="container">
-			<div class="main_title text-left">
-				<h2>Tools and Resources</h2>
-				<p>Curated links and ideas to keep QA and automation teams moving fast.</p>
-			</div>
-
-			<div class="row">
-				<div class="col-md-4 mb-4">
-					<div class="white_bg p-4 h-100">
-						<h4><i class="fab fa-github mr-2"></i> GitHub Trending Repositories</h4>
-						<p>Track what is trending across automation, testing, and AI.</p>
-						<a class="primary_btn tr-bg" href="https://github.com/trending" target="_blank" rel="noopener"><span>View Trending</span></a>
+			<div class="tools_hero_shell">
+				<div class="row align-items-center">
+					<div class="col-lg-7">
+						<div class="tools_hero_copy">
+							<span class="eyebrow">Tools page</span>
+							<h1>Curated tools for QA, automation, performance, and applied AI.</h1>
+							<p class="hero_summary">
+								A working stack of platforms, extensions, frameworks, and discovery sources I use to build faster validation loops, cleaner automation systems, and stronger engineering feedback.
+							</p>
+							<div class="hero_focus">
+								<div class="hero_focus_item">
+									<span class="focus_label">What lives here</span>
+									<p>Testing platforms, browser extensions, CI helpers, API tooling, performance kits, and AI workflow utilities.</p>
+								</div>
+								<div class="hero_focus_item">
+									<span class="focus_label">Why it matters</span>
+									<p>Teams move faster when the stack is opinionated, observable, and easy to adopt across delivery.</p>
+								</div>
+							</div>
+							<div class="hero_metrics">
+								<div class="metric_card">
+									<span class="metric_value">QA Stack</span>
+									<span class="metric_label">browser, API, data, and release tooling</span>
+								</div>
+								<div class="metric_card">
+									<span class="metric_value">AI Layer</span>
+									<span class="metric_label">LLM prompts, agents, and evaluation helpers</span>
+								</div>
+								<div class="metric_card">
+									<span class="metric_value">Curated</span>
+									<span class="metric_label">picked for practical engineering use</span>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-
-				<div class="col-md-4 mb-4">
-					<div class="white_bg p-4 h-100">
-						<h4><i class="fas fa-robot mr-2"></i> Hugging Face Trending Repos</h4>
-						<p>Discover popular models, datasets, and spaces used in QA and AI workflows.</p>
-						<a class="primary_btn tr-bg" href="https://huggingface.co/trending" target="_blank" rel="noopener"><span>Explore Trending</span></a>
-					</div>
-				</div>
-
-				<div class="col-md-4 mb-4">
-					<div class="white_bg p-4 h-100">
-						<h4><i class="fas fa-fire mr-2"></i> Product Hunt Trending Tools</h4>
-						<p>Keep an eye on new testing tools and automation platforms.</p>
-						<a class="primary_btn tr-bg" href="https://www.producthunt.com/" target="_blank" rel="noopener"><span>See Today</span></a>
-					</div>
-				</div>
-
-				<div class="col-md-4 mb-4">
-					<div class="white_bg p-4 h-100">
-						<h4><i class="fab fa-chrome mr-2"></i> QA Chrome Extensions</h4>
-						<p>Useful extensions for debugging, DOM checks, network inspection, and test authoring.</p>
-						<p class="mb-0">Examples: Bug Magnet, Lighthouse, WAVE, PerfectPixel, Page Ruler.</p>
-					</div>
-				</div>
-
-				<div class="col-md-4 mb-4">
-					<div class="white_bg p-4 h-100">
-						<h4><i class="fas fa-vials mr-2"></i> Automation Accelerators</h4>
-						<p>Starter frameworks, CI templates, and reporting setups for quick project bootstrapping.</p>
-						<p class="mb-0">Many more similar resources are listed in the repo and updates are added regularly.</p>
-					</div>
-				</div>
-
-				<div class="col-md-4 mb-4">
-					<div class="white_bg p-4 h-100">
-						<h4><i class="fas fa-layer-group mr-2"></i> QA Toolkits</h4>
-						<p>Curated collections for API testing, performance testing, and AI-driven checks.</p>
-						<p class="mb-0">More curated lists and tools coming soon.</p>
+					<div class="col-lg-5">
+						<div class="tools_hero_panel">
+							<div class="tools_spotlight_card">
+								<span class="visual_label">Current focus</span>
+								<h3>Automation systems that are observable, scalable, and AI-assisted.</h3>
+								<ul class="tools_spotlight_list">
+									<li><i class="fas fa-check-circle"></i> Playwright and Python delivery stack</li>
+									<li><i class="fas fa-check-circle"></i> Performance tooling with Locust and JMeter</li>
+									<li><i class="fas fa-check-circle"></i> Prompt, RAG, and agent testing workflows</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!--================Footer Area =================-->
+	<section class="section_gap section_shell" id="curated-tools">
+		<div class="container">
+			<div class="main_title text-left">
+				<span class="section_kicker">Core stack</span>
+				<h2>Toolkits I reach for across delivery.</h2>
+				<p>Grouped by how they support browser automation, API quality, performance testing, and AI-assisted workflows.</p>
+			</div>
+			<div class="tools_grid">
+				<div class="tools_feature_card">
+					<div class="tools_feature_icon"><i class="fas fa-window-maximize"></i></div>
+					<h3>Browser Automation</h3>
+					<p>Reliable web validation with fast feedback, resilient selectors, and maintainable test design.</p>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://playwright.dev/" target="_blank" rel="noopener"><i class="fas fa-play"></i> Playwright</a>
+						<a class="tool_tag" href="https://robotframework.org/" target="_blank" rel="noopener"><i class="fas fa-robot"></i> Robot Framework</a>
+						<a class="tool_tag" href="https://www.typescriptlang.org/" target="_blank" rel="noopener"><i class="fab fa-js"></i> TypeScript</a>
+						<a class="tool_tag" href="https://www.python.org/" target="_blank" rel="noopener"><i class="fab fa-python"></i> Python</a>
+					</div>
+				</div>
+				<div class="tools_feature_card">
+					<div class="tools_feature_icon"><i class="fas fa-plug"></i></div>
+					<h3>API and Data Validation</h3>
+					<p>Coverage for service-level correctness, contract stability, and data-confidence workflows.</p>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://www.postman.com/" target="_blank" rel="noopener"><i class="fas fa-exchange-alt"></i> Postman</a>
+						<a class="tool_tag" href="https://rest-assured.io/" target="_blank" rel="noopener"><i class="fas fa-code"></i> REST Assured</a>
+						<a class="tool_tag" href="https://www.mysql.com/" target="_blank" rel="noopener"><i class="fas fa-database"></i> SQL checks</a>
+						<a class="tool_tag" href="https://json-schema.org/" target="_blank" rel="noopener"><i class="fas fa-vial"></i> Schema validation</a>
+					</div>
+				</div>
+				<div class="tools_feature_card">
+					<div class="tools_feature_icon"><i class="fas fa-tachometer-alt"></i></div>
+					<h3>Performance and Load</h3>
+					<p>Performance baselines, bottleneck discovery, and environment-scale validation before release.</p>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://jmeter.apache.org/" target="_blank" rel="noopener"><i class="fas fa-bolt"></i> JMeter</a>
+						<a class="tool_tag" href="https://locust.io/" target="_blank" rel="noopener"><i class="fas fa-running"></i> Locust</a>
+						<a class="tool_tag" href="https://grafana.com/" target="_blank" rel="noopener"><i class="fas fa-chart-line"></i> Grafana</a>
+						<a class="tool_tag" href="https://opentelemetry.io/" target="_blank" rel="noopener"><i class="fas fa-wave-square"></i> Observability</a>
+					</div>
+				</div>
+				<div class="tools_feature_card">
+					<div class="tools_feature_icon"><i class="fas fa-brain"></i></div>
+					<h3>AI Workflow Layer</h3>
+					<p>Prompt-driven helpers, RAG evaluation, and agent testing patterns that support modern QA systems.</p>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noopener"><i class="fas fa-comment-dots"></i> Prompt design</a>
+						<a class="tool_tag" href="https://www.langchain.com/" target="_blank" rel="noopener"><i class="fas fa-project-diagram"></i> Agent flows</a>
+						<a class="tool_tag" href="https://docs.llamaindex.ai/" target="_blank" rel="noopener"><i class="fas fa-search"></i> RAG checks</a>
+						<a class="tool_tag" href="https://docs.ragas.io/" target="_blank" rel="noopener"><i class="fas fa-shield-alt"></i> LLM evaluation</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_gap section_shell" id="qa-playbooks">
+		<div class="container">
+			<div class="main_title text-left">
+				<span class="section_kicker">Playbooks</span>
+				<h2>Useful patterns for QA and automation engineers.</h2>
+				<p>High-signal guidance for where to start, what to verify, and what good coverage usually looks like in delivery.</p>
+			</div>
+			<div class="playbook_grid">
+				<div class="playbook_card">
+					<div class="tools_feature_icon"><i class="fas fa-route"></i></div>
+					<h3>Test Strategy Flow</h3>
+					<ul class="playbook_list">
+						<li>Identify business-critical journeys before writing detailed test cases.</li>
+						<li>Separate smoke, regression, performance, and data validation coverage.</li>
+						<li>Automate stable flows first, not the most complex UI path.</li>
+						<li>Map test coverage directly to release risk.</li>
+					</ul>
+				</div>
+				<div class="playbook_card">
+					<div class="tools_feature_icon"><i class="fas fa-rocket"></i></div>
+					<h3>Release Readiness</h3>
+					<ul class="playbook_list">
+						<li>Smoke suite pass across target environments.</li>
+						<li>Failed tests reviewed for real regressions vs flaky behavior.</li>
+						<li>API and data integrity checks completed on latest build.</li>
+						<li>Monitoring, logs, and rollback path confirmed before release.</li>
+					</ul>
+				</div>
+				<div class="playbook_card">
+					<div class="tools_feature_icon"><i class="fas fa-broom"></i></div>
+					<h3>Automation Hygiene</h3>
+					<ul class="playbook_list">
+						<li>Prefer stable selectors and page-object abstractions over brittle locators.</li>
+						<li>Keep tests independent, deterministic, and environment-aware.</li>
+						<li>Store test data centrally and version it with the suite.</li>
+						<li>Track flaky tests separately and fix them quickly.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_gap section_shell" id="discovery">
+		<div class="container">
+			<div class="main_title text-left">
+				<span class="section_kicker">Discovery sources</span>
+				<h2>Where I track tools, ideas, and useful movement.</h2>
+				<p>Sources worth checking when you want to stay current without drowning in noise.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="tools_link_card">
+						<div class="tools_link_icon"><i class="fab fa-github"></i></div>
+						<h3>GitHub Trending</h3>
+						<p>Useful for spotting emerging QA utilities, AI repos, and engineering accelerators early.</p>
+						<a class="primary_btn" href="https://github.com/trending" target="_blank" rel="noopener"><span>View source</span></a>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="tools_link_card">
+						<div class="tools_link_icon"><i class="fas fa-robot"></i></div>
+						<h3>Hugging Face Trending</h3>
+						<p>Models, datasets, and spaces relevant to agent workflows, prompt systems, and evaluation tooling.</p>
+						<a class="primary_btn" href="https://huggingface.co/trending" target="_blank" rel="noopener"><span>Explore</span></a>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="tools_link_card">
+						<div class="tools_link_icon"><i class="fas fa-bolt"></i></div>
+						<h3>Product Hunt</h3>
+						<p>Good for finding new productivity tools, QA utilities, and lightweight automation products.</p>
+						<a class="primary_btn" href="https://www.producthunt.com/" target="_blank" rel="noopener"><span>See tools</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_gap section_shell" id="qa-checklists">
+		<div class="container">
+			<div class="main_title text-left">
+				<span class="section_kicker">Checklists</span>
+				<h2>Fast checks worth keeping close during delivery.</h2>
+				<p>Simple coverage prompts for UI, API, data, and non-functional validation.</p>
+			</div>
+			<div class="checklist_shell">
+				<div class="checklist_card">
+					<h3>UI</h3>
+					<ul class="playbook_list">
+						<li>Responsive layout, broken states, and empty/error handling.</li>
+						<li>Accessibility basics: labels, tab flow, contrast, focus visibility.</li>
+						<li>Cross-browser behavior on critical journeys.</li>
+					</ul>
+				</div>
+				<div class="checklist_card">
+					<h3>API</h3>
+					<ul class="playbook_list">
+						<li>Status, schema, auth, and negative-path validation.</li>
+						<li>Idempotency, pagination, rate-limit, and contract checks.</li>
+						<li>Correlation between API response and UI rendering.</li>
+					</ul>
+				</div>
+				<div class="checklist_card">
+					<h3>Data</h3>
+					<ul class="playbook_list">
+						<li>Input sanitation, transformation logic, and downstream persistence.</li>
+						<li>Boundary values, null cases, and duplicate handling.</li>
+						<li>Audit columns, timestamps, and reconciliation quality.</li>
+					</ul>
+				</div>
+				<div class="checklist_card">
+					<h3>Performance</h3>
+					<ul class="playbook_list">
+						<li>Baseline timings before and after major changes.</li>
+						<li>Slow endpoints, payload weight, and frontend rendering cost.</li>
+						<li>Load profile aligned with realistic user traffic.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_gap section_shell" id="extensions">
+		<div class="container">
+			<div class="main_title text-left">
+				<span class="section_kicker">AI model platforms</span>
+				<h2>Model stacks for prototyping, evaluation, and production AI workflows.</h2>
+				<p>A selectable model directory with provider, version, modality, runtime, and common usage patterns.</p>
+			</div>
+			<div class="model_directory">
+				<div class="model_filters">
+					<div class="model_filter">
+						<label for="model-provider-filter">Provider</label>
+						<select id="model-provider-filter">
+							<option value="all">All providers</option>
+							<option value="openai">OpenAI</option>
+							<option value="google">Google</option>
+							<option value="anthropic">Anthropic</option>
+							<option value="ollama">Ollama</option>
+							<option value="cohere">Cohere</option>
+						</select>
+					</div>
+					<div class="model_filter">
+						<label for="model-type-filter">Type</label>
+						<select id="model-type-filter">
+							<option value="all">All types</option>
+							<option value="chat">Chat</option>
+							<option value="reasoning">Reasoning</option>
+							<option value="audio">Audio</option>
+							<option value="image">Image / Vision</option>
+							<option value="video">Video</option>
+							<option value="coding">Coding</option>
+						</select>
+					</div>
+					<div class="model_filter">
+						<label for="model-runtime-filter">Runtime</label>
+						<select id="model-runtime-filter">
+							<option value="all">All runtimes</option>
+							<option value="cloud">Cloud</option>
+							<option value="local">Local</option>
+							<option value="hosted">Hosted / API</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="model_grid" id="model-grid">
+					<article class="model_card" data-provider="openai" data-type="chat,image,coding" data-runtime="cloud,hosted">
+						<div class="model_card_head">
+							<span class="model_provider">OpenAI</span>
+							<h3>GPT-5.2</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">GPT-5.2</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, coding, reasoning</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Cloud / API</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">Agentic tasks and coding systems</span></div>
+						</div>
+						<a class="primary_btn" href="https://platform.openai.com/docs/models" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+
+					<article class="model_card" data-provider="openai" data-type="chat,image" data-runtime="cloud,hosted">
+						<div class="model_card_head">
+							<span class="model_provider">OpenAI</span>
+							<h3>GPT-4.1</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">GPT-4.1</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, image input</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Cloud / API</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">General workflows and tool calling</span></div>
+						</div>
+						<a class="primary_btn" href="https://platform.openai.com/docs/models/gpt-4.1" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+
+					<article class="model_card" data-provider="google" data-type="chat,reasoning,audio,image,video" data-runtime="cloud,hosted">
+						<div class="model_card_head">
+							<span class="model_provider">Google</span>
+							<h3>Gemini 2.5 Pro</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">Gemini 2.5 Pro</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, audio, image, video</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Cloud / API</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">Reasoning, code, long context</span></div>
+						</div>
+						<a class="primary_btn" href="https://ai.google.dev/gemini-api/docs/models/gemini-v2" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+
+					<article class="model_card" data-provider="anthropic" data-type="chat,image,reasoning,coding" data-runtime="cloud,hosted">
+						<div class="model_card_head">
+							<span class="model_provider">Anthropic</span>
+							<h3>Claude Sonnet 4</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">Claude Sonnet 4</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, image input, reasoning</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Cloud / API</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">High-performance reasoning and coding</span></div>
+						</div>
+						<a class="primary_btn" href="https://docs.anthropic.com/en/docs/about-claude/models/overview" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+
+					<article class="model_card" data-provider="anthropic" data-type="chat,image,reasoning" data-runtime="cloud,hosted">
+						<div class="model_card_head">
+							<span class="model_provider">Anthropic</span>
+							<h3>Claude Opus 4.1</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">Claude Opus 4.1</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, image input, reasoning</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Cloud / API</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">Deep analysis and advanced coding</span></div>
+						</div>
+						<a class="primary_btn" href="https://docs.anthropic.com/en/docs/about-claude/models/overview" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+
+					<article class="model_card" data-provider="ollama" data-type="chat,image" data-runtime="local">
+						<div class="model_card_head">
+							<span class="model_provider">Ollama</span>
+							<h3>Gemma 3</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">Gemma 3</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, vision</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Local</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">Single-GPU local multimodal work</span></div>
+						</div>
+						<a class="primary_btn" href="https://ollama.com/library" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+
+					<article class="model_card" data-provider="ollama" data-type="chat,reasoning" data-runtime="local">
+						<div class="model_card_head">
+							<span class="model_provider">Ollama</span>
+							<h3>Qwen3</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">Qwen3</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, reasoning</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Local</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">Reasoning and open-model experimentation</span></div>
+						</div>
+						<a class="primary_btn" href="https://ollama.com/library" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+
+					<article class="model_card" data-provider="cohere" data-type="chat,reasoning" data-runtime="cloud,hosted">
+						<div class="model_card_head">
+							<span class="model_provider">Cohere</span>
+							<h3>Command A</h3>
+						</div>
+						<div class="model_meta_grid">
+							<div><span class="model_meta_label">Version</span><span class="model_meta_value">command-a-03-2025</span></div>
+							<div><span class="model_meta_label">Type</span><span class="model_meta_value">Chat, RAG, agents</span></div>
+							<div><span class="model_meta_label">Runtime</span><span class="model_meta_value">Cloud / API</span></div>
+							<div><span class="model_meta_label">Best for</span><span class="model_meta_value">Enterprise retrieval and agent workflows</span></div>
+						</div>
+						<a class="primary_btn" href="https://docs.cohere.com/changelog/command-a" target="_blank" rel="noopener"><span>Open model</span></a>
+					</article>
+				</div>
+			</div>
+
+			<div class="main_title text-left">
+				<span class="section_kicker">Browser and workflow helpers</span>
+				<h2>QA extensions grouped by what they help you test.</h2>
+				<p>A broader extension catalog for UI, API, automation, data validation, data scraping, and security-focused workflows.</p>
+			</div>
+			<div class="tools_stack_rows">
+				<div class="tools_stack_row">
+					<div class="tools_stack_title">
+						<h3>UI Testing</h3>
+						<p>Useful for accessibility checks, selector inspection, layout review, broken-link checks, and quick exploratory testing.</p>
+					</div>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/bug-magnet/nlfpnjdmojahmmnhlnmjajkaommgbadc" target="_blank" rel="noopener"><i class="fas fa-bug"></i> Bug Magnet</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/selectorshub/ndgimibanhlabgdgjcpbbndiehljcpfh" target="_blank" rel="noopener"><i class="fas fa-crosshairs"></i> SelectorsHub</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh" target="_blank" rel="noopener"><i class="fas fa-universal-access"></i> WAVE</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" target="_blank" rel="noopener"><i class="fas fa-lightbulb"></i> Lighthouse</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/check-my-links/aajoalonednamcpodaeocebfgldhcpbe" target="_blank" rel="noopener"><i class="fas fa-link"></i> Check My Links</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/search/Page%20Ruler" target="_blank" rel="noopener"><i class="fas fa-ruler-combined"></i> Page Ruler</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/search/PerfectPixel" target="_blank" rel="noopener"><i class="fas fa-draw-polygon"></i> PerfectPixel</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/page-load-timer/bhklhaccecniahpolfcfjlhhnhogkfio" target="_blank" rel="noopener"><i class="fas fa-stopwatch"></i> Page Load Timer</a>
+					</div>
+				</div>
+				<div class="tools_stack_row">
+					<div class="tools_stack_title">
+						<h3>API Testing</h3>
+						<p>Extensions and browser-native clients for request capture, replay, mock setup, header testing, and JSON inspection.</p>
+					</div>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/test-api/bkndipmbnodeicgpmldococoiolcoicg" target="_blank" rel="noopener"><i class="fas fa-plug"></i> Test API</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/publisher/postman-inc/uf3026ce02867f99debf9df0a4a91eb76" target="_blank" rel="noopener"><i class="fas fa-paper-plane"></i> Postman Interceptor</a>
+						<a class="tool_tag" href="https://help.qlik.com/talend/en-US/api-services-getting-started-guide-api-services-platform/Cloud/installing-chrome-extension" target="_blank" rel="noopener"><i class="fas fa-vials"></i> Talend API Tester</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/requestly-http-intercepti/mdnleldcmiljblolnjhpnblkcekpdkpa" target="_blank" rel="noopener"><i class="fas fa-random"></i> Requestly</a>
+						<a class="tool_tag" href="https://modheader.com/" target="_blank" rel="noopener"><i class="fas fa-exchange-alt"></i> ModHeader</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="noopener"><i class="fas fa-code"></i> JSONVue</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/api-sniffer-pro/nmjlnpdkejlggndlhalhiegphjlbceni" target="_blank" rel="noopener"><i class="fas fa-network-wired"></i> API Sniffer Pro</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/xapi-http-client-api-test/ilcnglohbiokfdcokfceihebobkpeaij" target="_blank" rel="noopener"><i class="fas fa-terminal"></i> XApi HTTP Client</a>
+					</div>
+				</div>
+				<div class="tools_stack_row">
+					<div class="tools_stack_title">
+						<h3>Automation Helpers</h3>
+						<p>Selector generation, record-and-document flows, quick cache resets, cookies, and browser-state support for automation teams.</p>
+					</div>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/selectorshub/ndgimibanhlabgdgjcpbbndiehljcpfh" target="_blank" rel="noopener"><i class="fas fa-crosshairs"></i> SelectorsHub</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/testcase-studio-pro/nbikaeclldnpbfeffmhakhfaekkbfjel" target="_blank" rel="noopener"><i class="fas fa-clipboard-list"></i> TestCase Studio Pro</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/clear-cache/epompmcepniobjioaagepjacapcoofof" target="_blank" rel="noopener"><i class="fas fa-broom"></i> Clear Cache</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm" target="_blank" rel="noopener"><i class="fas fa-cookie-bite"></i> Cookie-Editor</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/bug-finder/jclblkcggoblecgkfllockhgpfbjpmfp" target="_blank" rel="noopener"><i class="fas fa-bug"></i> Bug Finder</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/requestly-http-intercepti/mdnleldcmiljblolnjhpnblkcekpdkpa" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i> Requestly</a>
+					</div>
+				</div>
+				<div class="tools_stack_row">
+					<div class="tools_stack_title">
+						<h3>Data Validation</h3>
+						<p>Helpful for validating JSON payloads, schemas, response structure, cookie/session state, and content-level issues.</p>
+					</div>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/json-toolkit/jmeodpddeeglckkknfggcpccndpejnjf" target="_blank" rel="noopener"><i class="fas fa-file-code"></i> JSON Toolkit</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc" target="_blank" rel="noopener"><i class="fas fa-code"></i> JSONVue</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/json-formatter-viewer/bfdhcpkfeafgoaadcpeompdndamdlgfj" target="_blank" rel="noopener"><i class="fas fa-stream"></i> JSON Formatter & Viewer</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh" target="_blank" rel="noopener"><i class="fas fa-universal-access"></i> WAVE</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm" target="_blank" rel="noopener"><i class="fas fa-cookie-bite"></i> Cookie-Editor</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/check-my-links/aajoalonednamcpodaeocebfgldhcpbe" target="_blank" rel="noopener"><i class="fas fa-link"></i> Check My Links</a>
+					</div>
+				</div>
+				<div class="tools_stack_row">
+					<div class="tools_stack_title">
+						<h3>Data Scraping</h3>
+						<p>Useful for extracting tables, crawling pages, validating selectors, and collecting structured data during test analysis.</p>
+					</div>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://www.energent.ai/use-cases/en/instant-data-scraper" target="_blank" rel="noopener"><i class="fas fa-download"></i> Instant Data Scraper</a>
+						<a class="tool_tag" href="https://dataminer.io/" target="_blank" rel="noopener"><i class="fas fa-database"></i> Data Miner</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/web-scraper/nahicglnnlljopedgoganganjmmjbaam" target="_blank" rel="noopener"><i class="fas fa-table"></i> Web Scraper</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/xpath-hunter/ilokcibgkohdjfnbeecbomlhjekfkkeg" target="_blank" rel="noopener"><i class="fas fa-sitemap"></i> XPath Hunter</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/selectorshub/ndgimibanhlabgdgjcpbbndiehljcpfh" target="_blank" rel="noopener"><i class="fas fa-crosshairs"></i> SelectorsHub</a>
+					</div>
+				</div>
+				<div class="tools_stack_row">
+					<div class="tools_stack_title">
+						<h3>Security Testing</h3>
+						<p>Focused on headers, cookies, CSP behavior, request rewriting, and browser-side validation of common web security controls.</p>
+					</div>
+					<div class="toolkit_tags">
+						<a class="tool_tag" href="https://modheader.com/" target="_blank" rel="noopener"><i class="fas fa-shield-alt"></i> ModHeader</a>
+						<a class="tool_tag" href="https://centralcsp.com/features/extension" target="_blank" rel="noopener"><i class="fas fa-lock"></i> CentralCSP</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm" target="_blank" rel="noopener"><i class="fas fa-cookie-bite"></i> Cookie-Editor</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/editthiscookie-v3/ojfebgpkimhlhcblbalbfjblapadhbol" target="_blank" rel="noopener"><i class="fas fa-user-secret"></i> EditThisCookie V3</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/requestly-http-intercepti/mdnleldcmiljblolnjhpnblkcekpdkpa" target="_blank" rel="noopener"><i class="fas fa-random"></i> Requestly</a>
+						<a class="tool_tag" href="https://chromewebstore.google.com/detail/test-api/bkndipmbnodeicgpmldococoiolcoicg" target="_blank" rel="noopener"><i class="fas fa-vials"></i> Test API</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section_gap section_shell" id="automation-notes">
+		<div class="container">
+			<div class="main_title text-left">
+				<span class="section_kicker">Automation notes</span>
+				<h2>Reference patterns that help teams scale cleanly.</h2>
+				<p>Short reminders for framework design, CI usage, debugging, and test-data discipline.</p>
+			</div>
+			<div class="notes_grid">
+				<div class="note_card">
+					<h3>Framework Design</h3>
+					<p>Separate locators, workflows, assertions, and fixtures. Keep domain logic out of selectors and keep assertions readable.</p>
+				</div>
+				<div class="note_card">
+					<h3>CI/CD</h3>
+					<p>Run smoke tests early, full regression later, and publish artifacts for screenshots, logs, traces, and reports on every failure.</p>
+				</div>
+				<div class="note_card">
+					<h3>Debugging</h3>
+					<p>Capture request logs, console errors, screenshots, traces, and environment metadata before calling a failure flaky.</p>
+				</div>
+				<div class="note_card">
+					<h3>Test Data</h3>
+					<p>Prefer deterministic seeded data, reset hooks, and explicit ownership for shared environments and long-lived accounts.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<footer class="footer_area">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="footer_top flex-column">
-						<div class="footer_logo">
-							<img class="author_img rounded-circle" src="img/blog/author.jpg" alt="Portrait of Meraj" loading="lazy" decoding="async">
-							<h4>Meraj Khan</h4>
-							<p>Automation Consultant</p>
-							<div class="footer_social">
+						<div class="footer_logo footer_profile_open">
+							<div class="footer_profile_head">
+								<img class="author_img rounded-circle" src="img/blog/author.jpg" alt="Portrait of Meraj" loading="lazy" decoding="async">
+								<div class="footer_profile_copy">
+									<span class="footer_profile_kicker">Available for consulting</span>
+									<h4>Meraj Khan</h4>
+									<p class="footer_role">AI Automation Engineer</p>
+								</div>
+							</div>
+							<p class="footer_profile_summary">Automation consultant with 10+ years in QA and test engineering. I help teams ship faster with clean automation, stable pipelines, and a calm, quality-first culture.</p>
+							<div class="footer_social footer_profile_links">
 								<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
 								<a href="#" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
 								<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
 								<a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
 								<a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
 							</div>
-							<p>Automation consultant with 10+ years in QA and test engineering. I help teams ship faster with clean automation, stable pipelines, and a calm, quality-first culture.</p>
 						</div>
 						<p class="mt-3">
 							&copy; 2026 Meraj Khan. All Rights Reserved.
@@ -139,14 +603,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="row footer_bottom justify-content-center">
-				<p class="col-lg-8 col-sm-12 footer-text">
-			</div>
+			<div class="row footer_bottom justify-content-center"></div>
 		</div>
 	</footer>
-	<!--================End Footer Area =================-->
+
 	<button id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
-	<!-- Optional JavaScript -->
+	<a id="ai-chat-fab" href="mailto:meraj.codes.ai@gmail.com" aria-label="Chat about AI automation"><i class="fas fa-robot"></i></a>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -154,7 +616,7 @@
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script src="js/custom.js"></script>
-	<script src="js/laser-cursor.js"></script>
+	<script src="js/dot-field.js"></script>
 </body>
 
 </html>

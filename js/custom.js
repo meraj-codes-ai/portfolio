@@ -1,4 +1,39 @@
 (function(){
+  var body = document.body;
+  if (!body || !body.classList.contains('ai-future-theme')) return;
+
+  var toggle = document.getElementById('theme-toggle');
+  var storageKey = 'site-theme';
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  function setTheme(theme) {
+    body.setAttribute('data-theme', theme);
+    if (toggle) {
+      var isDark = theme === 'dark';
+      toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+  }
+
+  var savedTheme = null;
+  try {
+    savedTheme = window.localStorage.getItem(storageKey);
+  } catch (e) {}
+
+  setTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
+
+  if (toggle) {
+    toggle.addEventListener('click', function(){
+      var nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      setTheme(nextTheme);
+      try {
+        window.localStorage.setItem(storageKey, nextTheme);
+      } catch (e) {}
+    });
+  }
+})();
+
+(function(){
   // Back to top
   var backBtn = document.getElementById('back-to-top');
   function onScroll(){
@@ -129,4 +164,43 @@
       activateTab(list[nextIndex]);
     });
   });
+})();
+
+// Tools page: AI model directory filters
+(function(){
+  var grid = document.getElementById('model-grid');
+  if (!grid) return;
+
+  var provider = document.getElementById('model-provider-filter');
+  var type = document.getElementById('model-type-filter');
+  var runtime = document.getElementById('model-runtime-filter');
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.model_card'));
+
+  function includesFilter(value, selected) {
+    if (!selected || selected === 'all') return true;
+    return (value || '')
+      .split(',')
+      .map(function(item){ return item.trim(); })
+      .indexOf(selected) !== -1;
+  }
+
+  function applyFilters() {
+    var providerValue = provider ? provider.value : 'all';
+    var typeValue = type ? type.value : 'all';
+    var runtimeValue = runtime ? runtime.value : 'all';
+
+    cards.forEach(function(card){
+      var matchesProvider = includesFilter(card.getAttribute('data-provider'), providerValue);
+      var matchesType = includesFilter(card.getAttribute('data-type'), typeValue);
+      var matchesRuntime = includesFilter(card.getAttribute('data-runtime'), runtimeValue);
+      card.hidden = !(matchesProvider && matchesType && matchesRuntime);
+    });
+  }
+
+  [provider, type, runtime].forEach(function(control){
+    if (!control) return;
+    control.addEventListener('change', applyFilters);
+  });
+
+  applyFilters();
 })();
