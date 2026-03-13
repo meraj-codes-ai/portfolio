@@ -90,3 +90,43 @@
 
   linkMap.forEach(function(_, sec){ io.observe(sec); });
 })();
+
+// Selected work tabs
+(function(){
+  var root = document.getElementById('portfolio');
+  if (!root) return;
+  var tabs = root.querySelectorAll('.project_tab');
+  var panels = root.querySelectorAll('.project_panel');
+  if (!tabs.length || !panels.length) return;
+
+  function activateTab(tab) {
+    var targetId = tab.getAttribute('data-project-target');
+    tabs.forEach(function(item){
+      var active = item === tab;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    panels.forEach(function(panel){
+      var active = panel.id === targetId;
+      panel.classList.toggle('is-active', active);
+      panel.hidden = !active;
+    });
+  }
+
+  tabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      activateTab(tab);
+    });
+    tab.addEventListener('keydown', function(e){
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      e.preventDefault();
+      var list = Array.prototype.slice.call(tabs);
+      var index = list.indexOf(tab);
+      var nextIndex = e.key === 'ArrowRight'
+        ? (index + 1) % list.length
+        : (index - 1 + list.length) % list.length;
+      list[nextIndex].focus();
+      activateTab(list[nextIndex]);
+    });
+  });
+})();
