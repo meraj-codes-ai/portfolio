@@ -9,6 +9,10 @@
 	//* Navbar Fixed
 	function navbarFixed() {
 		if ($('.header_area').length) {
+			if ($('body').hasClass('ai-future-theme')) {
+				$('.header_area').addClass('navbar_fixed');
+				return;
+			}
 			$(window).scroll(function() {
 				var scroll = $(window).scrollTop();
 				if (scroll >= nav_offset_top) {
