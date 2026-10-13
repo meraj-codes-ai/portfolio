@@ -4,48 +4,64 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Meraj Khan tools page - curated QA, automation, performance, and AI engineering tools.">
-	<meta property="og:title" content="Meraj Khan - Tools">
-	<meta property="og:description" content="A curated tools page for modern QA, automation, and AI-assisted engineering workflows.">
+	<meta name="description" content="Meraj Khan's curated QA, automation, performance, browser, API, and applied AI engineering toolkit.">
+	<meta name="theme-color" content="#f7f9ff" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="#09101f" media="(prefers-color-scheme: dark)">
+	<meta name="color-scheme" content="light dark">
+	<meta property="og:title" content="Meraj Khan | QA &amp; AI Engineering Toolkit">
+	<meta property="og:description" content="A practical toolkit for modern QA, automation, performance, and AI-assisted engineering workflows.">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="img/logo.png">
+	<meta property="og:url" content="https://meraj-codes-ai.github.io/portfolio/tools.html">
+	<meta property="og:image" content="https://meraj-codes-ai.github.io/portfolio/img/og.png">
+	<meta property="og:image:alt" content="Meraj Khan — QA Automation, Performance, and AI Testing">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Meraj Khan | QA &amp; AI Engineering Toolkit">
+	<meta name="twitter:description" content="A practical toolkit for modern quality engineering workflows.">
+	<meta name="twitter:image" content="https://meraj-codes-ai.github.io/portfolio/img/og.png">
+	<link rel="canonical" href="https://meraj-codes-ai.github.io/portfolio/tools.html">
 	<link rel="icon" href="img/logo.png" type="image/png">
-	<title>Meraj Tools</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/custom.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css" rel="stylesheet">
+	<title>Meraj Khan | QA &amp; AI Engineering Toolkit</title>
+	<link rel="stylesheet" href="css/site.min.css">
+	<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+	</noscript>
 </head>
 
 <body class="ai-future-theme tools-page">
+	<script>
+		(function () {
+			try {
+				var savedTheme = window.localStorage.getItem('site-theme');
+				var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+				document.body.setAttribute('data-theme', savedTheme || (prefersDark ? 'dark' : 'light'));
+			} catch (error) {}
+		})();
+	</script>
+	<a class="skip_link" href="#main-content">Skip to content</a>
 	<header class="header_area">
 		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav class="navbar navbar-expand-lg navbar-light" aria-label="Primary navigation">
 				<div class="container">
 					<a class="navbar-brand logo_h" href="index.html#home" aria-label="Go to home">
-						<img class="img-fluid" src="img/logo.png" alt="Meraj Khan Logo">
+						<img class="img-fluid" src="img/logo.png" alt="Meraj Khan" width="250" height="250" decoding="async">
 					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-line"></span>
+						<span class="navbar-toggler-line"></span>
+						<span class="navbar-toggler-line"></span>
 					</button>
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.html#portfolio">Projects</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.html#certifications">Certifications</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#portfolio">Work</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#ai-ecosystem">AI Stack</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#certifications">Credentials</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#services">Expertise</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
-							<li class="nav-item"><a class="nav-link active" href="tools.html">Tools</a></li>
-							<li class="nav-item"><a class="nav-link" href="https://github.com/meraj-codes-ai" target="_blank" rel="noopener">Repos</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+							<li class="nav-item"><a class="nav-link active" href="tools.html" aria-current="page">Tools</a></li>
+							<li class="nav-item"><a class="nav-link nav_contact_link" href="index.html#contact">Let&apos;s talk</a></li>
 						</ul>
 						<div class="theme_toggle_wrap">
 							<button class="theme_toggle_btn" type="button" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
@@ -59,6 +75,7 @@
 		</div>
 	</header>
 
+	<main id="main-content">
 	<section class="tools_hero_area" id="home">
 		<div class="container">
 			<div class="tools_hero_shell">
@@ -334,6 +351,7 @@
 						</select>
 					</div>
 				</div>
+				<p class="model_result_count" id="model-result-count" role="status" aria-live="polite"></p>
 
 				<div class="model_grid" id="model-grid">
 					<article class="model_card" data-provider="openai" data-type="chat,image,coding" data-runtime="cloud,hosted">
@@ -574,22 +592,23 @@
 			</div>
 		</div>
 	</section>
+	</main>
 
-	<footer class="footer_area">
+	<footer class="footer_area" aria-label="Footer">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-6">
+				<div class="col-lg-12">
 					<div class="footer_top flex-column">
 						<div class="footer_logo footer_profile_open">
 							<div class="footer_profile_head">
-								<img class="author_img rounded-circle" src="img/blog/author.jpg" alt="Portrait of Meraj" loading="lazy" decoding="async">
+								<img class="author_img rounded-circle" src="img/blog/author.jpg" alt="Portrait of Meraj Khan" width="150" height="161" loading="lazy" decoding="async">
 								<div class="footer_profile_copy">
 									<span class="footer_profile_kicker">Available for consulting</span>
-									<h4>Meraj Khan</h4>
-									<p class="footer_role">AI Automation Engineer</p>
+									<h3 class="footer_name">Meraj Khan</h3>
+									<p class="footer_role">QA Automation &amp; AI Testing Engineer</p>
 								</div>
 							</div>
-							<p class="footer_profile_summary">Automation consultant with 10+ years in QA and test engineering. I help teams ship faster with clean automation, stable pipelines, and a calm, quality-first culture.</p>
+							<p class="footer_profile_summary">QA automation and AI testing consultant with 10+ years in quality engineering. I help teams ship faster with maintainable automation, stable pipelines, stronger test strategy, and clear release confidence.</p>
 							<div class="footer_contact_strip">
 								<div class="footer_contact_stat">
 									<span class="footer_contact_value">10+</span>
@@ -607,11 +626,11 @@
 								</div>
 							</div>
 							<div class="footer_social footer_profile_links">
-								<a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-								<a href="#" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
-								<a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-								<a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-								<a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+								<a href="mailto:meraj.codes.ai@gmail.com" aria-label="Email Meraj"><i class="fas fa-envelope"></i></a>
+								<a href="https://github.com/meraj-codes-ai" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+								<a href="https://sites.google.com/view/khanstack/testops?authuser=2" target="_blank" rel="noopener" aria-label="Learnings"><i class="fas fa-book-open"></i></a>
+								<a href="Profile.pdf" target="_blank" rel="noopener" aria-label="Resume PDF"><i class="fas fa-file-pdf"></i></a>
+								<a href="tel:+919490724987" aria-label="Call Meraj"><i class="fas fa-phone-alt"></i></a>
 							</div>
 						</div>
 						<p class="mt-3">
@@ -624,14 +643,7 @@
 		</div>
 	</footer>
 
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/theme.js"></script>
 	<script src="js/custom.js"></script>
-	<script src="js/dot-field.js"></script>
 </body>
 
 </html>
